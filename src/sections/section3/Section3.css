@@ -1,0 +1,79 @@
+.conteiner-section-3 {
+  background-color: var(--blue);
+  height: 130vh;
+  transform: skewY(6deg);
+  display: flex;
+  justify-content: center;
+  position: relative;
+}
+
+.conteiner-section-3 .content {
+  transform: skewY(-6deg);
+  width: 100%;
+  max-width: 1300px;
+  height: 100%;
+  z-index: 10;
+  position: relative;
+  /* padding-top: 50px; */
+}
+.conteiner-section-3 .content .cont-titulo {
+  /* background-color: red; */
+  margin-top: 200px;
+  display: flex;
+  justify-content: center;
+  color: white;
+}
+.conteiner-section-3 .content .imagen-avatar {
+  position: absolute;
+  bottom: 100px;
+}
+
+.item-section-3 {
+  position: absolute;
+}
+
+.item-section-3.NodeJs {
+  top: 350px;
+  left: 100px;
+}
+
+.item-section-3.Css3 {
+  top: 600px;
+  left: 200px;
+}
+.item-section-3.React {
+  top: 450px;
+  left: 400px;
+}
+.item-section-3.Javascript {
+  top: 800px;
+  left: 420px;
+}
+.item-section-3.Html5 {
+  top: 600px;
+  left: 550px;
+}
+.item-section-3.Express {
+  bottom: 250px;
+  left: 650px;
+}
+.item-section-3.GitHub {
+  bottom: 350px;
+  right: 350px;
+}
+.item-section-3.Firebase {
+  top: 500px;
+  right: 350px;
+}
+.item-section-3.MongoDB {
+  top: 350px;
+  right: 200px;
+}
+.item-section-3.Material-UI {
+  top: 500px;
+  right: 50px;
+}
+.item-section-3.Redux {
+  bottom: 350px;
+  right: 100px;
+}

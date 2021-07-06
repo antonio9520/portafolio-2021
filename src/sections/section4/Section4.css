@@ -1,0 +1,21 @@
+.container-proyectos {
+  /* background-color: red; */
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding-left: 100px;
+  padding-right: 100px;
+  padding-top: 200px;
+}
+
+.conteiner-section-4 {
+  /* background-color: green; */
+  margin-top: 300px;
+  min-height: 110vh;
+}
+
+.conteiner-section-4 h1 {
+  color: var(--text);
+  text-align: center;
+}

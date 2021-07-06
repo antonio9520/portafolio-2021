@@ -1,0 +1,25 @@
+.conteiner-menu {
+  /* background-color: red; */
+  position: sticky;
+  top: 0;
+  height: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 100;
+}
+
+.sub-conteiner-menu {
+  /* background-color: blue; */
+  display: flex;
+  max-width: 1300px;
+  width: 100%;
+  justify-content: flex-end;
+}
+
+.sub-conteiner-menu h5 {
+  margin-right: 25px;
+  color: white;
+  font-weight: 400;
+  /* color: var(--text); */
+}

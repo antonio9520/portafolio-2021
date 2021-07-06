@@ -1,0 +1,33 @@
+.conteiner-section-2 {
+  /* background-color: red; */
+  height: 130vh;
+  display: flex;
+  justify-content: center;
+}
+
+.conteiner-section-2 .center {
+  /* background-color: aqua; */
+  width: 100%;
+  max-width: 1300px;
+  display: flex;
+  align-items: center;
+  margin-bottom: 200px;
+}
+
+
+
+.conteiner-section-2 .center .left {
+  width: 50%;
+  padding-right: 80px;
+  color: var(--text);
+}
+
+.conteiner-section-2 .center .left h1 {
+  margin-bottom: 60px;
+}
+
+.conteiner-section-2 .center .rigth {
+  width: 50%;
+  padding-left: 80px;
+  padding-top: 120px;
+}
