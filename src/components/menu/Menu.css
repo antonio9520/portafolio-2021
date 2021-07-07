@@ -7,8 +7,15 @@
   justify-content: center;
   align-items: center;
   z-index: 100;
+  transition: 0.5s all ease-in-out;
 }
-
+.conteiner-menu.menu-small {
+  background-color: #1e3266;
+  z-index: 100;
+  height: 50px;
+  transition: 0.5s all ease-in-out;
+  box-shadow: 1px 10px 40px rgba(0, 0, 0, 0.15);
+}
 .sub-conteiner-menu {
   /* background-color: blue; */
   display: flex;
@@ -18,8 +25,10 @@
 }
 
 .sub-conteiner-menu h5 {
-  margin-right: 25px;
+  margin-right: 35px;
   color: white;
   font-weight: 400;
+  font-family: "Roboto";
+ cursor: pointer;
   /* color: var(--text); */
 }

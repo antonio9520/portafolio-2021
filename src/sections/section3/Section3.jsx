@@ -1,7 +1,8 @@
 /* eslint-disable import/no-anonymous-default-export */
-import React from "react";
+import React, { useState, useEffect } from "react";
 import "./Section3.css";
 import { Image2 } from "../../svg";
+import imagen2 from "../../resources/imagen2.svg";
 import nodeicon from "../../resources/node.svg";
 import cssicon from "../../resources/css.svg";
 import exicon from "../../resources/ex.svg";
@@ -14,20 +15,29 @@ import muiicon from "../../resources/mui.svg";
 import reacticon from "../../resources/react.svg";
 import reduxicon from "../../resources/redux.svg";
 
-export default () => {
+export default ({ visible }) => {
   return (
     <div className="conteiner-section-3">
       <div className="content">
         <div className="cont-titulo">
-          <h1>Conocimientos</h1>
+          <h1 id="conocimientos">Conocimientos</h1>
         </div>
-
-        <div className="imagen-avatar">
-          <Image2 />
-        </div>
-        {data.map((item, index) => (
-          <Item key={index} data={item} />
-        ))}
+        {visible ? (
+          <>
+            <div className="imagen-avatar">
+              <object
+                className="imagen2svg"
+                type="image/svg+xml"
+                data={imagen2}
+              >
+                svg-animation
+              </object>
+            </div>
+            {data.map((item, index) => (
+              <Item key={index} data={item} />
+            ))}
+          </>
+        ) : null}
       </div>
     </div>
   );
@@ -35,8 +45,15 @@ export default () => {
 
 const Item = ({ data }) => {
   const { icon, titulo } = data;
+  const [_class, setClass] = useState("");
+
+  useEffect(() => {
+    setTimeout(() => {
+      setClass("move");
+    }, 3300);
+  }, []);
   return (
-    <div className={`item-section-3 ${titulo}`}>
+    <div className={`item-section-3 ${titulo} ${_class} `}>
       <img src={icon} alt={titulo} />
     </div>
   );

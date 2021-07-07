@@ -6,7 +6,7 @@ import "./Section4.css";
 
 export default () => {
   return (
-    <div className="conteiner-section-4">
+    <div id="proyectos" className="conteiner-section-4">
       <h1>Proyectos</h1>
       <div className="container-proyectos">
         {proyectos.map((proyecto, index) => (

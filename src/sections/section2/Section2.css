@@ -12,14 +12,16 @@
   display: flex;
   align-items: center;
   margin-bottom: 200px;
+ 
 }
-
-
 
 .conteiner-section-2 .center .left {
   width: 50%;
   padding-right: 80px;
   color: var(--text);
+  transform: translateX(-500px);
+  opacity: 0;
+  animation: fadeIn 1s ease-in-out forwards;
 }
 
 .conteiner-section-2 .center .left h1 {
@@ -30,4 +32,11 @@
   width: 50%;
   padding-left: 80px;
   padding-top: 120px;
+}
+
+@keyframes fadeIn {
+  to {
+    transform: translateX(0px);
+    opacity: 1;
+  }
 }

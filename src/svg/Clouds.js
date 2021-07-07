@@ -7,8 +7,7 @@ const Clouds = () => {
       version="1.1"
       xmlnsXlink="http://www.w3.org/1999/xlink"
       xmlnsSvgjs="http://svgjs.com/svgjs"
-      width="100%"
-      height="100vh"
+      width="100%" height="100vh"
       preserveAspectRatio="none"
       viewBox="0 0 1920 1080"
     >

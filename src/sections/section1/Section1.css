@@ -35,3 +35,9 @@
   font-weight: 400;
   margin-top: 15px;
 }
+
+.conteiner-section-1 .fondo-svg {
+  /* height: 100vh !important; */
+  /* width: 100% !important; */
+  margin-top: -130px;
+}

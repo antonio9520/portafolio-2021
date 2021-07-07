@@ -6,7 +6,7 @@ import { Mail, GitHub, Instagram, LinkedIn } from "@material-ui/icons";
 
 export default () => {
   return (
-    <div className="conteiner-section-5">
+    <div id="contacto" className="conteiner-section-5">
       <div className="overlay"></div>
 
       <div className="contacto">

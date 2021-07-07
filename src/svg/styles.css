@@ -1,0 +1,21 @@
+.image-1-svg .rect1 {
+  /* animation: animation1 3s ease-in-out infinite alternate; */
+}
+
+@keyframes animation1 {
+  0% {
+    /* -webkit-transform: rotate(360deg);
+        -moz-transform: rotate(360deg);
+        -ms-transform: rotate(360deg);
+        -o-transform: rotate(360deg); */
+    transform: translate(-313.1754deg, 254.44578deg);
+  }
+  100% {
+    /* -webkit-transform: rotate(360deg);
+    -moz-transform: rotate(360deg);
+    -ms-transform: rotate(360deg);
+    -o-transform: rotate(360deg); */
+    /* transform: translate(313.1754px, -254.44578px); */
+    transform: translate(-360.1754deg, 254.44578deg);
+  }
+}

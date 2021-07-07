@@ -1,6 +1,7 @@
 .conteiner-section-3 {
   background-color: var(--blue);
-  height: 130vh;
+  /* background-color: black; */
+  height: 1200px;
   transform: skewY(6deg);
   display: flex;
   justify-content: center;
@@ -14,10 +15,8 @@
   height: 100%;
   z-index: 10;
   position: relative;
-  /* padding-top: 50px; */
 }
 .conteiner-section-3 .content .cont-titulo {
-  /* background-color: red; */
   margin-top: 200px;
   display: flex;
   justify-content: center;
@@ -27,53 +26,215 @@
   position: absolute;
   bottom: 100px;
 }
-
 .item-section-3 {
   position: absolute;
+  cursor: pointer;
+  border-radius: 50%;
+  transition: 0.5s all ease-in-out;
 }
-
+.item-section-3:hover {
+  box-shadow: 1px 10px 40px rgba(0, 0, 0, 0.3);
+}
+/*node*/
 .item-section-3.NodeJs {
-  top: 350px;
-  left: 100px;
+  top: 29%;
+  left: 8%;
+  transform: scale(0);
+  animation: showUp 1s ease-in-out forwards;
+}
+.item-section-3.NodeJs.move {
+  top: 29%;
+  left: 8%;
+  transform: scale(0.9);
+  animation: animateMagnify 15s ease-in-out infinite alternate;
+}
+/*css*/
+.item-section-3.Css3 {
+  top: 49%;
+  left: 15%;
+  transform: scale(0);
+  animation: showUp2 1s ease-in-out forwards;
+  animation-delay: 0.5s;
+}
+.item-section-3.Css3.move {
+  top: 49%;
+  left: 15%;
+  transform: scale(1.05);
+  animation: animateMagnify2 17s ease-in-out infinite alternate;
+  animation-delay: 1s;
+}
+/*react*/
+.item-section-3.React {
+  top: 37%;
+  left: 31%;
+  transform: scale(0);
+  animation: showUp 1s ease-in-out forwards;
+  animation-delay: 0.7s;
+}
+.item-section-3.React.move {
+  top: 37%;
+  left: 31%;
+  transform: scale(0.9);
+  animation: animateMagnify 20s ease-in-out infinite alternate;
+  animation-delay: 1.5s;
+}
+/*javascript*/
+.item-section-3.Javascript {
+  top: 66%;
+  left: 32%;
+  transform: scale(0);
+  animation: showUp2 1s ease-in-out forwards;
+  animation-delay: 1s;
+}
+.item-section-3.Javascript.move {
+  top: 66%;
+  left: 32%;
+  transform: scale(1.05);
+  animation: animateMagnify2 15s ease-in-out infinite alternate;
+  animation-delay: 0.5s;
+}
+/*html*/
+.item-section-3.Html5 {
+  top: 49%;
+  left: 43%;
+  transform: scale(0);
+  animation: showUp 1s ease-in-out forwards;
+  animation-delay: 1.2s;
+}
+.item-section-3.Html5.move {
+  top: 49%;
+  left: 43%;
+  transform: scale(0.9);
+  animation: animateMagnify 14s ease-in-out infinite alternate;
+  animation-delay: 0.8s;
+}
+/*express*/
+.item-section-3.Express {
+  bottom: 20%;
+  left: 50%;
+  transform: scale(0);
+  animation: showUp2 1s ease-in-out forwards;
+  animation-delay: 1.4s;
+}
+.item-section-3.Express.move {
+  bottom: 20%;
+  left: 50%;
+  transform: scale(1.05);
+  animation: animateMagnify2 17s ease-in-out infinite alternate;
+  animation-delay: 1s;
+}
+/*github*/
+.item-section-3.GitHub {
+  bottom: 28%;
+  right: 27%;
+  transform: scale(0);
+  animation: showUp 1s ease-in-out forwards;
+  animation-delay: 1.6s;
+}
+.item-section-3.GitHub.move {
+  bottom: 28%;
+  right: 27%;
+  transform: scale(0.9);
+  animation: animateMagnify 18s ease-in-out infinite alternate;
+  animation-delay: 1.7s;
+}
+/*firebase*/
+.item-section-3.Firebase {
+  top: 41%;
+  right: 27%;
+  transform: scale(0);
+  animation: showUp2 1s ease-in-out forwards;
+  animation-delay: 1.8s;
+}
+.item-section-3.Firebase.move {
+  top: 41%;
+  right: 27%;
+  transform: scale(1.05);
+  animation: animateMagnify2 15s ease-in-out infinite alternate;
+  animation-delay: 3s;
+}
+/*mongo*/
+.item-section-3.MongoDB {
+  top: 29%;
+  right: 15%;
+  transform: scale(0);
+  animation: showUp 1s ease-in-out forwards;
+  animation-delay: 2s;
+}
+.item-section-3.MongoDB.move {
+  top: 29%;
+  right: 15%;
+  transform: scale(0.9);
+  animation: animateMagnify 16s ease-in-out infinite alternate;
+  animation-delay: 4s;
+}
+/*material-ui*/
+.item-section-3.Material-UI {
+  top: 41%;
+  right: 4%;
+  transform: scale(0);
+  animation: showUp2 1s ease-in-out forwards;
+  animation-delay: 2.2s;
+}
+.item-section-3.Material-UI.move {
+  top: 41%;
+  right: 4%;
+  transform: scale(1.05);
+  animation: animateMagnify2 19s ease-in-out infinite alternate;
+  animation-delay: 2.5s;
+}
+/*redux*/
+.item-section-3.Redux {
+  bottom: 23%;
+  right: 8%;
+  transform: scale(0);
+  animation: showUp 1s ease-in-out forwards;
+  animation-delay: 2.4s;
+}
+.item-section-3.Redux.move {
+  bottom: 23%;
+  right: 8%;
+  transform: scale(0.9);
+  animation: animateMagnify 16s ease-in-out infinite alternate;
+  animation-delay: 2.4s;
 }
 
-.item-section-3.Css3 {
-  top: 600px;
-  left: 200px;
+.imagen2svg {
+  /* background-color: red; */
+  width: 100%;
+  height: 100%;
 }
-.item-section-3.React {
-  top: 450px;
-  left: 400px;
+@keyframes animateMagnify {
+  0% {
+    transform: scale(0.9) translate(0, 0);
+  }
+  100% {
+    transform: scale(1.05) translate(30px, 30px);
+  }
 }
-.item-section-3.Javascript {
-  top: 800px;
-  left: 420px;
+
+@keyframes animateMagnify2 {
+  0% {
+    transform: scale(1.05) translate(0, 0);
+  }
+  100% {
+    transform: scale(0.9) translate(-30px, -30px);
+  }
 }
-.item-section-3.Html5 {
-  top: 600px;
-  left: 550px;
+
+@keyframes showUp {
+  0% {
+    transform: scale(0);
+  }
+  100% {
+    transform: scale(0.9);
+  }
 }
-.item-section-3.Express {
-  bottom: 250px;
-  left: 650px;
-}
-.item-section-3.GitHub {
-  bottom: 350px;
-  right: 350px;
-}
-.item-section-3.Firebase {
-  top: 500px;
-  right: 350px;
-}
-.item-section-3.MongoDB {
-  top: 350px;
-  right: 200px;
-}
-.item-section-3.Material-UI {
-  top: 500px;
-  right: 50px;
-}
-.item-section-3.Redux {
-  bottom: 350px;
-  right: 100px;
+@keyframes showUp2 {
+  0% {
+    transform: scale(0);
+  }
+  100% {
+    transform: scale(1.05);
+  }
 }
