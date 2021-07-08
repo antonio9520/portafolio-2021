@@ -1,6 +1,7 @@
 import React from "react";
 import "./Menu.css";
 import { Link } from "react-scroll";
+
 const Menu = ({ visible }) => {
   return (
     <div className={`conteiner-menu ${visible && "menu-small"}`}>
@@ -33,7 +34,7 @@ const Menu = ({ visible }) => {
           to="conocimientos"
           spy={true}
           smooth={true}
-          offset={-50}
+          offset={-150}
           duration={500}
         >
           <h5>Conocimientos</h5>
@@ -44,7 +45,7 @@ const Menu = ({ visible }) => {
           to="proyectos"
           spy={true}
           smooth={true}
-          offset={-50}
+          offset={-150}
           duration={500}
         >
           <h5>Proyectos</h5>

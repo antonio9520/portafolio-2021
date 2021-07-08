@@ -7,6 +7,10 @@
   justify-content: center;
   position: relative;
 }
+.conteiner-section-3 h1 {
+  /* background-color: red; */
+  margin-top: 100px;
+}
 
 .conteiner-section-3 .content {
   transform: skewY(-6deg);
@@ -31,9 +35,29 @@
   cursor: pointer;
   border-radius: 50%;
   transition: 0.5s all ease-in-out;
+  /* overflow: hidden; */
 }
-.item-section-3:hover {
+.item-section-3:hover .overlay {
   box-shadow: 1px 10px 40px rgba(0, 0, 0, 0.3);
+  opacity: 1;
+}
+
+.item-section-3 .overlay {
+  position: absolute;
+  top: -1px;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  border-radius: 50%;
+  transition: 0.5s ease;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #00000050;
+  color: white;
 }
 /*node*/
 .item-section-3.NodeJs {

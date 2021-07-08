@@ -1,23 +1,87 @@
 .conteiner-section-1 {
-  /* background-color: red; */
+  /* background-color: #1e3266; */
   height: 110vh;
   margin-top: -100px;
   background-size: cover;
   position: relative;
+  overflow: hidden;
+  margin-top: -100px;
+}
+
+.conteiner-section-1 .fondo-color {
+  background-color: #1e3266;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  top: -130px;
 }
 
 .conteiner-section-1 .center {
   position: absolute;
   /* background-color: rgb(12, 83, 60); */
-  height: 150px;
+  /* height: 500px; */
   width: 100%;
   bottom: 200px;
   display: flex;
+  opacity: 0;
   justify-content: center;
+  animation: fadeIn 1s ease-in-out forwards;
+  animation-delay: 2.5s;
 }
-
+.conteiner-section-1 .top {
+  position: absolute;
+  top: 100px;
+  height: 500px;
+  width: 100%;
+}
+.conteiner-section-1 .top {
+  position: absolute;
+  top: 100px;
+  height: 50%;
+  width: 100%;
+}
+.conteiner-section-1 .top div {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* background-color: green; */
+}
+.conteiner-section-1 .top .moon {
+  width: 250px;
+  /* position: absolute; */
+  top: 0px;
+  /* display: none; */
+  transform: scale(0);
+  animation: animationMoon 3s ease-in-out forwards;
+  animation-delay: 3s;
+}
+.conteiner-section-1 .top .moon.pulse {
+  transform: scale(1);
+  animation: pulseMoon 5s ease-in-out infinite alternate;
+}
+.conteiner-section-1 .top .globo1 {
+  width: 300px;
+  position: absolute;
+  left: 100px;
+  opacity: 0.8;
+  transform: translateX(-400px);
+  animation: animationG1 60s ease-in-out infinite alternate;
+}
+.conteiner-section-1 .top .globo2 {
+  width: 150px;
+  position: absolute;
+  right: 150px;
+  opacity: 0.8;
+  top: 400px;
+  transform: translateX(300px);
+  animation: animationG2 60s ease-in-out infinite alternate;
+  animation-delay: 10s;
+}
 .conteiner-section-1 .center div {
-  /* background-color: aquamarine; */
   width: 500px;
   display: flex;
   flex-direction: column;
@@ -37,7 +101,45 @@
 }
 
 .conteiner-section-1 .fondo-svg {
-  /* height: 100vh !important; */
-  /* width: 100% !important; */
   margin-top: -130px;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes animationG1 {
+  from {
+    transform: translateX(-400px) scale(0.9);
+  }
+  to {
+    transform: translateX(200px) scale(1.1);
+  }
+}
+@keyframes animationG2 {
+  from {
+    transform: translateX(300px) scale(0.9);
+  }
+  to {
+    transform: translateX(-300px) scale(1.1);
+  }
+}
+@keyframes animationMoon {
+  to {
+    transform: scale(1);
+  }
+}
+
+@keyframes pulseMoon {
+  from {
+    transform: scale(1);
+  }
+  to {
+    transform: scale(1.1);
+  }
 }

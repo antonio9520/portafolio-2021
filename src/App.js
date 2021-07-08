@@ -5,7 +5,7 @@ import { Menu} from "./components";
 
 const App = () => {
   const [state, setState] = useState({
-    section1: true,
+    section1: false,
     section2: false,
     section3: false,
     section4: false,
