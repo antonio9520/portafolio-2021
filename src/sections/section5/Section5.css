@@ -29,9 +29,9 @@
   align-items: center;
 }
 
-.conteiner-section-5 .contacto h1{
-margin-bottom: 20px;
-  }
+.conteiner-section-5 .contacto h1 {
+  margin-bottom: 20px;
+}
 .conteiner-section-5 .text-footer {
   z-index: 10;
   margin-bottom: 30px;
@@ -39,11 +39,14 @@ margin-bottom: 20px;
 
 .conteiner-section-5 .cont-iconos {
   display: flex;
-  /* background-color: red; */
 }
-
-
 
 .conteiner-section-5 .icon-btn-contacto {
   color: white !important;
+  transition: 0.5s all ease-in-out;
+}
+
+.conteiner-section-5 .icon-btn-contacto:hover {
+  transform: rotate(360deg) !important;
+  color: rgb(148, 204, 143) !important;
 }

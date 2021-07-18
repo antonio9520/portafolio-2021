@@ -25,9 +25,8 @@ const useStyles = makeStyles((theme) => ({
   },
 }));
 
-const CardProyect = ({ proyecto }) => {
- 
-
+const CardProyect = ({ proyecto, delay }) => {
+  console.log(delay);
   const { imageURL, nombre, lenguajes, descripcion } = proyecto;
 
   const classes = useStyles();
@@ -38,7 +37,10 @@ const CardProyect = ({ proyecto }) => {
   };
 
   return (
-    <div className="container-targetProyect">
+    <div
+      className="container-targetProyect"
+      style={{ animationDelay: `${delay}s` }}
+    >
       <div className="cont-contenido">
         <div className="cont-img-card">
           <img className="img-targetProyect" src={imageURL} alt="imagen"></img>
@@ -48,8 +50,8 @@ const CardProyect = ({ proyecto }) => {
             {nombre}
           </Typography>
           <div className="container-icons">
-            {lenguajes.map((lenguaje) => (
-              <LenguajeIcon lenguaje={lenguaje} />
+            {lenguajes.map((lenguaje, index) => (
+              <LenguajeIcon key={index} lenguaje={lenguaje} />
             ))}
           </div>
           <div className="cont-arrow-collapse">

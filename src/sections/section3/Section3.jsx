@@ -17,7 +17,7 @@ import Modal from "./components/Modal";
 import { Tooltip } from "@material-ui/core";
 
 export default ({ visible }) => {
-  const [openModal, setOpenModal] = useState(true);
+  const [openModal, setOpenModal] = useState(false);
   const [dataDetalles, setDataDetalles] = useState({
     titulo: "",
     nivel: "",
@@ -25,10 +25,10 @@ export default ({ visible }) => {
   });
 
   return (
-    <div className="conteiner-section-3">
+    <div id="conocimientos" className="conteiner-section-3">
       <div className="content">
         <div className="cont-titulo">
-          <h1 id="conocimientos">Conocimientos</h1>
+          <h1>Conocimientos</h1>
         </div>
         {visible ? (
           <>
@@ -116,7 +116,7 @@ const data = [
   {
     titulo: "GitHub",
     icon: giticon,
-    nivel: "Intermedio",
+    nivel: "Básico",
     detalles: "",
   },
   {
@@ -144,7 +144,7 @@ const data = [
     detalles: "",
   },
   {
-    titulo: "React",
+    titulo: "ReactJS && React Native",
     icon: reacticon,
     nivel: "Avanzado",
     detalles: "",
@@ -152,7 +152,7 @@ const data = [
   {
     titulo: "Redux",
     icon: reduxicon,
-    nivel: "Avanzado",
+    nivel: "Intermedio",
     detalles: "",
   },
 ];

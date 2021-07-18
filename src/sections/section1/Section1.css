@@ -50,19 +50,29 @@
   align-items: center;
   /* background-color: green; */
 }
+/* .conteiner-section-1 .top .moon {
+  width: 250px;
+  
+  top: 0px;
+
+  transform: scale(0);
+  animation: animationMoon 3s ease-in-out forwards;
+  animation-delay: 3s;
+} */
 .conteiner-section-1 .top .moon {
   width: 250px;
   /* position: absolute; */
   top: 0px;
   /* display: none; */
-  transform: scale(0);
+  transform: translateY(-500px);
+  opacity: 0;
   animation: animationMoon 3s ease-in-out forwards;
   animation-delay: 3s;
 }
-.conteiner-section-1 .top .moon.pulse {
-  transform: scale(1);
+/* .conteiner-section-1 .top .moon.pulse {
+  transform: scale(0.9);
   animation: pulseMoon 5s ease-in-out infinite alternate;
-}
+} */
 .conteiner-section-1 .top .globo1 {
   width: 300px;
   position: absolute;
@@ -102,6 +112,12 @@
 
 .conteiner-section-1 .fondo-svg {
   margin-top: -130px;
+  /* min-height: 100vh; */
+  /* background-color: red; */
+  
+  position: absolute;
+  width: 100%;
+  min-width: 1520px;
 }
 
 @keyframes fadeIn {
@@ -131,15 +147,36 @@
 }
 @keyframes animationMoon {
   to {
-    transform: scale(1);
+    transform: translateY(0);
+    opacity: 1;
   }
 }
 
 @keyframes pulseMoon {
   from {
-    transform: scale(1);
+    transform: scale(0.9);
   }
   to {
-    transform: scale(1.1);
+    transform: scale(1);
   }
+}
+
+/* MEDIA QUERIES */
+@media only screen and (min-width: 1279px) and (max-width: 1619px) {
+  
+}
+
+@media only screen and (min-width: 960px) and (max-width: 1279px) {
+}
+
+/* Smartphones in landscape mode */
+
+@media only screen and (min-width: 600px) and (max-width: 959px) {
+
+}
+
+/* Smartphones in portrait mode  */
+
+@media only screen and (max-width: 599px) {
+
 }

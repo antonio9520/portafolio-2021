@@ -9,16 +9,16 @@ export default ({ visible }) => {
   return (
     <div id="inicio" className="conteiner-section-1">
       <div className="fondo-color"></div>
-      {!visible ? (
+      {visible ? (
         <>
           <object className="fondo-svg" type="image/svg+xml" data={clouds}>
             svg-animation
           </object>
           <div className="top">
             <div>
-              <Moon />
-              <img className="globo1" src={globo} alt="globo" />
-              <img className="globo2" src={globo} alt="globo" />
+              {/* <Moon /> */}
+              {/* <img className="globo1" src={globo} alt="globo" />
+              <img className="globo2" src={globo} alt="globo" /> */}
             </div>
           </div>
           <div className="center">

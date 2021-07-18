@@ -19,3 +19,33 @@
   color: var(--text);
   text-align: center;
 }
+
+/* MEDIA QUERIES */
+
+@media only screen and (min-width: 1279px) and (max-width: 1500px) {
+  .container-proyectos {
+    /* background-color: red; */
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding-left: 100px;
+    padding-right: 100px;
+    padding-top: 150px;
+  }
+
+  .conteiner-section-4 {
+    /* background-color: green; */
+    margin-top: 200px;
+  }
+}
+
+/* Smartphones in landscape mode */
+
+@media only screen and (min-width: 600px) and (max-width: 959px) {
+}
+
+/* Smartphones in portrait mode  */
+
+@media only screen and (max-width: 599px) {
+}

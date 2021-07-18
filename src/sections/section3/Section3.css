@@ -262,3 +262,156 @@
     transform: scale(1.05);
   }
 }
+
+/* MEDIA QUERIES */
+@media only screen and (min-width: 1279px) and (max-width: 1619px) {
+}
+
+@media only screen and (min-width: 1279px) and (max-width: 1500px) {
+  .conteiner-section-3 {
+    height: 1000px;
+  }
+  .conteiner-section-3 .content {
+    transform: scale(0.9) skewY(-6deg);
+    /* background-color: red; */
+    padding-bottom: 200px;
+  }
+  .conteiner-section-3 h1 {
+    /* background-color: red; */
+    margin-top: 0px;
+    transform: scale(1.1);
+  }
+  /*express*/
+  .item-section-3.Express {
+    bottom: 15%;
+    left: 50%;
+  }
+  .item-section-3.Express.move {
+    bottom: 15%;
+    left: 50%;
+  }
+}
+@media only screen and (min-width: 959px) and (max-width: 1279px) {
+  .conteiner-section-3 {
+    height: 1000px;
+    /* background-color: red; */
+  }
+  .conteiner-section-3 .content {
+    transform: scale(0.9) skewY(-6deg);
+    /* background-color: green; */
+    padding-bottom: 200px;
+  }
+  .conteiner-section-3 h1 {
+    /* background-color: red; */
+    margin-top: 0px;
+    transform: scale(1.2);
+  }
+  /*node*/
+  .item-section-3.NodeJs {
+    top: 23%;
+    left: 0%;
+  }
+  .item-section-3.NodeJs.move {
+    top: 23%;
+    left: 0%;
+  }
+  /*css*/
+  .item-section-3.Css3 {
+    top: 49%;
+    left: 7.5%;
+  }
+  .item-section-3.Css3.move {
+    top: 49%;
+    left: 7.5%;
+  }
+  /*react*/
+  .item-section-3.React {
+    top: 32%;
+    left: 25%;
+  }
+  .item-section-3.React.move {
+    top: 32%;
+    left: 25%;
+  }
+  /*javascript*/
+  .item-section-3.Javascript {
+    top: 65%;
+    left: 30%;
+  }
+  .item-section-3.Javascript.move {
+    top: 65%;
+    left: 30%;
+  }
+  /*html*/
+  .item-section-3.Html5 {
+    top: 45%;
+    left: 38%;
+  }
+  .item-section-3.Html5.move {
+    top: 45%;
+    left: 38%;
+  }
+  /*express*/
+  .item-section-3.Express {
+    bottom: 20%;
+    left: 50%;
+  }
+  .item-section-3.Express.move {
+    bottom: 20%;
+    left: 50%;
+  }
+  /*github*/
+  .item-section-3.GitHub {
+    bottom: 28%;
+    right: 27%;
+  }
+  .item-section-3.GitHub.move {
+    bottom: 28%;
+    right: 27%;
+  }
+  /*firebase*/
+  .item-section-3.Firebase {
+    top: 41%;
+    right: 25%;
+  }
+  .item-section-3.Firebase.move {
+    top: 41%;
+    right: 25%;
+  }
+  /*mongo*/
+  .item-section-3.MongoDB {
+    top: 29%;
+    right: 15%;
+  }
+  .item-section-3.MongoDB.move {
+    top: 29%;
+    right: 15%;
+  }
+  /*material-ui*/
+  .item-section-3.Material-UI {
+    top: 41%;
+    right: 0%;
+  }
+  .item-section-3.Material-UI.move {
+    top: 41%;
+    right: 0%;
+  }
+  /*redux*/
+  .item-section-3.Redux {
+    bottom: 23%;
+    right: 4%;
+  }
+  .item-section-3.Redux.move {
+    bottom: 23%;
+    right: 4%;
+  }
+}
+/* Smartphones in landscape mode */
+
+@media only screen and (min-width: 600px) and (max-width: 959px) {
+}
+
+/* Smartphones in portrait mode  */
+
+@media only screen and (max-width: 599px) {
+}

@@ -11,6 +11,9 @@
   padding-bottom: 100px;
   width: 550px;
   height: 30%;
+  transform: scale(0);
+  animation: animationProyecto 1s ease-in-out forwards;
+  
 }
 
 .cont-contenido {
@@ -51,5 +54,12 @@
 .cont-descripcion {
   padding: 0 15px 10px 15px;
 }
-.cont-typo {
+
+@keyframes animationProyecto {
+  from {
+    transform: scale(0);
+  }
+  to {
+    transform: scale(1);
+  }
 }

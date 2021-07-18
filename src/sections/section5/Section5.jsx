@@ -14,7 +14,7 @@ export default () => {
         <div className="cont-iconos">
           {contacto.map((contact, i) => (
             <div className="cont-icono">
-              <IconButton
+              <IconButton 
                 href={contact.link}
                 title={contact.title}
                 target={contact.target}

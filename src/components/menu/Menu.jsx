@@ -4,7 +4,7 @@ import { Link } from "react-scroll";
 
 const Menu = ({ visible }) => {
   return (
-    <div className={`conteiner-menu ${visible && "menu-small"}`}>
+    <div className={`conteiner-menu ${!visible && "menu-small"}`}>
       <div className="sub-conteiner-menu">
         <Link
           activeClass="active"
@@ -34,7 +34,7 @@ const Menu = ({ visible }) => {
           to="conocimientos"
           spy={true}
           smooth={true}
-          offset={-150}
+          offset={250}
           duration={500}
         >
           <h5>Conocimientos</h5>
