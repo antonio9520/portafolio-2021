@@ -44,3 +44,9 @@
     opacity: 1;
   }
 }
+
+@media only screen and (max-width: 599px) {
+  .conteiner-menu {
+    display: none;
+  }
+}

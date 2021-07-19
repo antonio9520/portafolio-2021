@@ -2,7 +2,7 @@
 import React, { useState, useEffect } from "react";
 import "./Section1.css";
 import clouds from "../../resources/clouds3.svg";
-import globo from "../../resources/globo.svg";
+// import globo from "../../resources/globo.svg";
 import moon from "../../resources/moon.svg";
 
 export default ({ visible }) => {
@@ -33,17 +33,17 @@ export default ({ visible }) => {
   );
 };
 
-const Moon = () => {
-  const [_class, setClass] = useState("");
+// const Moon = () => {
+//   const [_class, setClass] = useState("");
 
-  useEffect(() => {
-    setTimeout(() => {
-      setClass("pulse");
-    }, 6000);
-  }, []);
-  return (
-    <>
-      <img className={`moon ${_class}`} src={moon} alt="moon" />
-    </>
-  );
-};
+//   useEffect(() => {
+//     setTimeout(() => {
+//       setClass("pulse");
+//     }, 6000);
+//   }, []);
+//   return (
+//     <>
+//       <img className={`moon ${_class}`} src={moon} alt="moon" />
+//     </>
+//   );
+// };

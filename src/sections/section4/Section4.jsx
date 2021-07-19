@@ -7,18 +7,20 @@ import "./Section4.css";
 export default ({ visible }) => {
   return (
     <div id="proyectos" className="conteiner-section-4">
-      <h1>Proyectos</h1>
-      {visible ? (
-        <div className="container-proyectos">
-          {proyectos.map((proyecto, index) => (
-            <CardProyect
-              key={proyecto.id}
-              proyecto={proyecto}
-              delay={index * 0.2}
-            />
-          ))}
-        </div>
-      ) : null}
+      {visible && (
+        <>
+          <h1>Proyectos</h1>
+          <div className="container-proyectos">
+            {proyectos.map((proyecto, index) => (
+              <CardProyect
+                key={proyecto.id}
+                proyecto={proyecto}
+                delay={index * 0.2}
+              />
+            ))}
+          </div>
+        </>
+      )}
     </div>
   );
 };

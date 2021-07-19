@@ -35,6 +35,9 @@
 .conteiner-section-5 .text-footer {
   z-index: 10;
   margin-bottom: 30px;
+  text-align: center;
+  margin-right: 10px;
+  margin-left: 10px;
 }
 
 .conteiner-section-5 .cont-iconos {

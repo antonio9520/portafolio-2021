@@ -27,11 +27,11 @@ export default ({ visible }) => {
   return (
     <div id="conocimientos" className="conteiner-section-3">
       <div className="content">
-        <div className="cont-titulo">
-          <h1>Conocimientos</h1>
-        </div>
         {visible ? (
           <>
+            <div className="cont-titulo">
+              <h1>Conocimientos</h1>
+            </div>
             <div className="imagen-avatar">
               <object
                 className="imagen2svg"

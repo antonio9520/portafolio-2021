@@ -2,13 +2,14 @@ export const handleAnimation = (scrollTop, setState) => {
   const sobreMi = document.getElementById("sobremi");
   const conocimientos = document.getElementById("conocimientos");
   const proyectos = document.getElementById("proyectos");
+  const contacto = document.getElementById("contacto");
 
   // console.log("sobre mi: " + sobreMi.offsetTop);
   // console.log("conocimientos: " + conocimientos.offsetTop);
   // console.log("scroll: " + scrollTop);
 
   //INICIO
-  if (scrollTop < sobreMi.offsetTop) {
+  if (scrollTop < sobreMi.offsetTop - 500) {
     console.log("entro en section 1");
     setState({
       section1: true,
@@ -19,7 +20,10 @@ export const handleAnimation = (scrollTop, setState) => {
     });
   }
   //SOBRE MI
-  if (scrollTop > sobreMi.offsetTop && scrollTop < conocimientos.offsetTop) {
+  if (
+    scrollTop > sobreMi.offsetTop &&
+    scrollTop < conocimientos.offsetTop - 600
+  ) {
     console.log("entro en section 2");
     setState({
       section1: false,
@@ -33,7 +37,7 @@ export const handleAnimation = (scrollTop, setState) => {
   //CONOCIMIENTOS
   if (
     scrollTop > conocimientos.offsetTop &&
-    scrollTop < proyectos.offsetTop - 300
+    scrollTop < proyectos.offsetTop - 750
   ) {
     console.log("entro en section 3");
     setState({
@@ -45,7 +49,7 @@ export const handleAnimation = (scrollTop, setState) => {
     });
   }
   //PROYECTOS
-  if (scrollTop > proyectos.offsetTop - 200) {
+  if (scrollTop > proyectos.offsetTop - 200 && scrollTop < contacto.offsetTop - 500) {
     setState({
       section1: false,
       section2: false,
