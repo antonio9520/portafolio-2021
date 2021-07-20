@@ -1,7 +1,6 @@
 .conteiner-section-1 {
   /* background-color: #1e3266; */
   height: 110vh;
-  margin-top: -100px;
   background-size: cover;
   position: relative;
   overflow: hidden;
@@ -192,10 +191,13 @@
   .conteiner-section-1 .center div h1 {
     font-size: 36px;
   }
-  
+
   .conteiner-section-1 .center div h5 {
     font-size: 20px;
     font-weight: 400;
     margin-top: 10px;
+  }
+  .conteiner-section-1 {
+    margin-top: inherit;
   }
 }

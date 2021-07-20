@@ -1,18 +1,19 @@
 .conteiner-section-3 {
   background-color: var(--blue);
   /* background-color: black; */
-  height: 1200px;
+  height: 1100px;
   transform: skewY(6deg);
   display: flex;
   justify-content: center;
-  position: relative;
+  /* position: relative; */
 }
 .conteiner-section-3 h1 {
   /* background-color: red; */
-  margin-top: 100px;
+  /* margin-top: 0px; */
 }
 
 .conteiner-section-3 .content {
+  /* background-color: red; */
   transform: skewY(-6deg);
   width: 100%;
   max-width: 1300px;
@@ -419,9 +420,446 @@
 /* Smartphones in landscape mode */
 
 @media only screen and (min-width: 600px) and (max-width: 959px) {
+  .conteiner-section-3 {
+    background-color: var(--blue);
+    /* background-color: black; */
+    height: 1000px;
+    transform: skewY(6deg);
+    display: flex;
+    justify-content: center;
+    position: relative;
+  }
+  .conteiner-section-3 h1 {
+    /* background-color: rgb(141, 94, 94); */
+    margin-top: 0px;
+  }
+  .conteiner-section-3 .content .cont-titulo {
+    margin-top: 150px;
+  }
+  .conteiner-section-3 .content {
+    /* background-color: red; */
+    transform: skewY(-6deg);
+    width: 100%;
+    max-width: 1300px;
+    height: 100%;
+    z-index: 10;
+    position: relative;
+  }
+  /*node*/
+  .item-section-3.NodeJs {
+    top: 18%;
+    left: 0%;
+    transform: scale(0);
+    animation: scale06 1s ease-in-out forwards;
+  }
+  .item-section-3.NodeJs.move {
+    top: 18%;
+    left: 0%;
+    transform: scale(0.7);
+    animation: animateMagnifyTablet 15s ease-in-out infinite alternate;
+  }
+  /*css*/
+  .item-section-3.Css3 {
+    top: 35%;
+    left: 5%;
+    transform: scale(0);
+    animation: scale06 1s ease-in-out forwards;
+    animation-delay: 0.5s;
+  }
+  .item-section-3.Css3.move {
+    top: 35%;
+    left: 5%;
+    transform: scale(0.7);
+    animation: animateMagnify2Tablet 17s ease-in-out infinite alternate;
+    animation-delay: 1s;
+  }
+  /*react*/
+  .item-section-3.React {
+    top: 23%;
+    left: 43%;
+    transform: scale(0);
+    animation: scale06 1s ease-in-out forwards;
+    animation-delay: 0.7s;
+  }
+  .item-section-3.React.move {
+    top: 23%;
+    left: 43%;
+    transform: scale(0.7);
+    animation: animateMagnifyTablet 20s ease-in-out infinite alternate;
+    animation-delay: 1.5s;
+  }
+  /*javascript*/
+  .item-section-3.Javascript {
+    top: 55%;
+    left: 20%;
+    transform: scale(0);
+    animation: scale06 1s ease-in-out forwards;
+    animation-delay: 1s;
+  }
+  .item-section-3.Javascript.move {
+    top: 55%;
+    left: 20%;
+    transform: scale(0.7);
+    animation: animateMagnify2Tablet 15s ease-in-out infinite alternate;
+    animation-delay: 0.5s;
+  }
+  /*html*/
+  .item-section-3.Html5 {
+    top: 42%;
+    left: 40%;
+    transform: scale(0);
+    animation: scale06 1s ease-in-out forwards;
+    animation-delay: 1.2s;
+  }
+  .item-section-3.Html5.move {
+    top: 42%;
+    left: 40%;
+    transform: scale(0.7);
+    animation: animateMagnifyTablet 14s ease-in-out infinite alternate;
+    animation-delay: 0.8s;
+  }
+  /*express*/
+  .item-section-3.Express {
+    bottom: 20%;
+    left: 65%;
+    transform: scale(0);
+    animation: scale06 1s ease-in-out forwards;
+    animation-delay: 1.4s;
+  }
+  .item-section-3.Express.move {
+    bottom: 20%;
+    left: 65%;
+    transform: scale(0.7);
+    animation: animateMagnify2Tablet 17s ease-in-out infinite alternate;
+    animation-delay: 1s;
+  }
+  /*github*/
+  .item-section-3.GitHub {
+    bottom: 22%;
+    right: 45%;
+    transform: scale(0);
+    animation: scale06 1s ease-in-out forwards;
+    animation-delay: 1.6s;
+  }
+  .item-section-3.GitHub.move {
+    bottom: 22%;
+    right: 45%;
+    transform: scale(0.7);
+    animation: animateMagnifyTablet 18s ease-in-out infinite alternate;
+    animation-delay: 1.7s;
+  }
+  /*firebase*/
+  .item-section-3.Firebase {
+    top: 35%;
+    right: 15%;
+    transform: scale(0);
+    animation: scale06 1s ease-in-out forwards;
+    animation-delay: 1.8s;
+  }
+  .item-section-3.Firebase.move {
+    top: 35%;
+    right: 15%;
+    transform: scale(0.7);
+    animation: animateMagnify2Tablet 15s ease-in-out infinite alternate;
+    animation-delay: 3s;
+  }
+  /*mongo*/
+  .item-section-3.MongoDB {
+    top: 25%;
+    right: 4%;
+    transform: scale(0);
+    animation: scale06 1s ease-in-out forwards;
+    animation-delay: 2s;
+  }
+  .item-section-3.MongoDB.move {
+    top: 25%;
+    right: 4%;
+    transform: scale(0.7);
+    animation: animateMagnifyTablet 16s ease-in-out infinite alternate;
+    animation-delay: 4s;
+  }
+  /*material-ui*/
+  .item-section-3.Material-UI {
+    top: 44%;
+    right: 0%;
+    transform: scale(0);
+    animation: scale06 1s ease-in-out forwards;
+    animation-delay: 2.2s;
+  }
+  .item-section-3.Material-UI.move {
+    top: 44%;
+    right: 0%;
+    transform: scale(0.7);
+    animation: animateMagnify2Tablet 19s ease-in-out infinite alternate;
+    animation-delay: 2.5s;
+  }
+  /*redux*/
+  .item-section-3.Redux {
+    bottom: 25%;
+    right: 5%;
+    transform: scale(0);
+    animation: scale06 1s ease-in-out forwards;
+    animation-delay: 2.4s;
+  }
+  .item-section-3.Redux.move {
+    bottom: 25%;
+    right: 5%;
+    transform: scale(0.7);
+    animation: animateMagnifyTablet 16s ease-in-out infinite alternate;
+    animation-delay: 2.4s;
+  }
+  .conteiner-section-3 .content .imagen-avatar {
+    position: absolute;
+    bottom: 110px;
+    opacity: 0;
+    transform: scale(0.8);
+    animation: aparecerAnimation 1s ease-in-out forwards;
+  }
 }
 
+@keyframes scale06 {
+  to {
+    transform: scale(0.7);
+  }
+}
+
+@keyframes animateMagnifyTablet {
+  0% {
+    transform: scale(0.7) translate(0, 0);
+  }
+  100% {
+    transform: scale(0.8) translate(20px, 20px);
+  }
+}
+
+@keyframes animateMagnify2Tablet {
+  0% {
+    transform: scale(0.7) translate(0, 0);
+  }
+  100% {
+    transform: scale(0.8) translate(-20px, -20px);
+  }
+}
 /* Smartphones in portrait mode  */
 
 @media only screen and (max-width: 599px) {
+  .conteiner-section-3 {
+    background-color: var(--blue);
+    /* background-color: black; */
+    height: 1000px;
+    transform: skewY(6deg);
+    display: flex;
+    justify-content: center;
+    position: relative;
+  }
+  .conteiner-section-3 h1 {
+    /* background-color: rgb(141, 94, 94); */
+    margin-top: 0px;
+  }
+  .conteiner-section-3 .content .cont-titulo {
+    margin-top: 150px;
+  }
+  .conteiner-section-3 .content {
+    /* background-color: red; */
+    transform: skewY(-6deg);
+    width: 100%;
+    max-width: 1300px;
+    height: 100%;
+    z-index: 10;
+    position: relative;
+  }
+  /*node*/
+  .item-section-3.NodeJs {
+    top: 18%;
+    left: 0%;
+    transform: scale(0);
+    animation: scale04 1s ease-in-out forwards;
+  }
+  .item-section-3.NodeJs.move {
+    top: 18%;
+    left: 0%;
+    transform: scale(0.5);
+    animation: animateMagnifySM 15s ease-in-out infinite alternate;
+  }
+  /*css*/
+  .item-section-3.Css3 {
+    top: 30%;
+    left: 5%;
+    transform: scale(0);
+    animation: scale04 1s ease-in-out forwards;
+    animation-delay: 0.5s;
+  }
+  .item-section-3.Css3.move {
+    top: 30%;
+    left: 5%;
+    transform: scale(0.5);
+    animation: animateMagnify2SM 17s ease-in-out infinite alternate;
+    animation-delay: 1s;
+  }
+  /*react*/
+  .item-section-3.React {
+    top: 23%;
+    left: 43%;
+    transform: scale(0);
+    animation: scale04 1s ease-in-out forwards;
+    animation-delay: 0.7s;
+  }
+  .item-section-3.React.move {
+    top: 23%;
+    left: 43%;
+    transform: scale(0.5);
+    animation: animateMagnifySM 20s ease-in-out infinite alternate;
+    animation-delay: 1.5s;
+  }
+  /*javascript*/
+  .item-section-3.Javascript {
+    top: 55%;
+    left: 5%;
+    transform: scale(0);
+    animation: scale04 1s ease-in-out forwards;
+    animation-delay: 1s;
+  }
+  .item-section-3.Javascript.move {
+    top: 55%;
+    left: 5%;
+    transform: scale(0.5);
+    animation: animateMagnify2SM 15s ease-in-out infinite alternate;
+    animation-delay: 0.5s;
+  }
+  /*html*/
+  .item-section-3.Html5 {
+    top: 42%;
+    left: 24%;
+    transform: scale(0);
+    animation: scale04 1s ease-in-out forwards;
+    animation-delay: 1.2s;
+  }
+  .item-section-3.Html5.move {
+    top: 42%;
+    left: 24%;
+    transform: scale(0.5);
+    animation: animateMagnifySM 14s ease-in-out infinite alternate;
+    animation-delay: 0.8s;
+  }
+  /*express*/
+  .item-section-3.Express {
+    bottom: 22%;
+    left: 70%;
+    transform: scale(0);
+    animation: scale04 1s ease-in-out forwards;
+    animation-delay: 1.4s;
+  }
+  .item-section-3.Express.move {
+    bottom: 22%;
+    left: 70%;
+    transform: scale(0.5);
+    animation: animateMagnify2SM 17s ease-in-out infinite alternate;
+    animation-delay: 1s;
+  }
+  /*github*/
+  .item-section-3.GitHub {
+    bottom: 26%;
+    right: 33%;
+    transform: scale(0);
+    animation: scale04 1s ease-in-out forwards;
+    animation-delay: 1.6s;
+  }
+  .item-section-3.GitHub.move {
+    bottom: 26%;
+    right: 33%;
+    transform: scale(0.5);
+    animation: animateMagnifySM 18s ease-in-out infinite alternate;
+    animation-delay: 1.7s;
+  }
+  /*firebase*/
+  .item-section-3.Firebase {
+    top: 35%;
+    right: 15%;
+    transform: scale(0);
+    animation: scale04 1s ease-in-out forwards;
+    animation-delay: 1.8s;
+  }
+  .item-section-3.Firebase.move {
+    top: 35%;
+    right: 15%;
+    transform: scale(0.5);
+    animation: animateMagnify2SM 15s ease-in-out infinite alternate;
+    animation-delay: 3s;
+  }
+  /*mongo*/
+  .item-section-3.MongoDB {
+    top: 25%;
+    right: 4%;
+    transform: scale(0);
+    animation: scale04 1s ease-in-out forwards;
+    animation-delay: 2s;
+  }
+  .item-section-3.MongoDB.move {
+    top: 25%;
+    right: 4%;
+    transform: scale(0.5);
+    animation: animateMagnifySM 16s ease-in-out infinite alternate;
+    animation-delay: 4s;
+  }
+  /*material-ui*/
+  .item-section-3.Material-UI {
+    top: 44%;
+    right: -5%;
+    transform: scale(0);
+    animation: scale04 1s ease-in-out forwards;
+    animation-delay: 2.2s;
+  }
+  .item-section-3.Material-UI.move {
+    top: 44%;
+    right: -5%;
+    transform: scale(0.5);
+    animation: animateMagnify2SM 19s ease-in-out infinite alternate;
+    animation-delay: 2.5s;
+  }
+  /*redux*/
+  .item-section-3.Redux {
+    bottom: 29%;
+    right: 0%;
+    transform: scale(0);
+    animation: scale04 1s ease-in-out forwards;
+    animation-delay: 2.4s;
+  }
+  .item-section-3.Redux.move {
+    bottom: 29%;
+    right: 0%;
+    transform: scale(0.5);
+    animation: animateMagnifySM 16s ease-in-out infinite alternate;
+    animation-delay: 2.4s;
+  }
+  .conteiner-section-3 .content .imagen-avatar {
+    position: absolute;
+    bottom: 110px;
+    opacity: 0;
+    transform: scale(0.8);
+    animation: aparecerAnimation 1s ease-in-out forwards;
+  }
+}
+
+@keyframes scale04 {
+  to {
+    transform: scale(0.5);
+  }
+}
+
+@keyframes animateMagnifySM {
+  0% {
+    transform: scale(0.5) translate(0, 0);
+  }
+  100% {
+    transform: scale(0.4) translate(20px, 20px);
+  }
+}
+
+@keyframes animateMagnify2SM {
+  0% {
+    transform: scale(0.5) translate(0, 0);
+  }
+  100% {
+    transform: scale(0.4) translate(-20px, -20px);
+  }
 }

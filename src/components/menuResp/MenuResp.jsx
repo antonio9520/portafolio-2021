@@ -57,7 +57,7 @@ const MenuResp = ({ visible }) => {
           to="conocimientos"
           spy={true}
           smooth={true}
-          offset={250}
+          offset={150}
           duration={500}
           onClick={() => setOpen(false)}
         >

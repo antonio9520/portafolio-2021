@@ -82,6 +82,7 @@
     /* background-color: aqua; */
     flex-direction: column;
     justify-content: center;
+    margin-bottom: inherit;
   }
   .conteiner-section-2 .center .left {
     /* background-color: red; */
@@ -94,5 +95,11 @@
     padding-left: inherit;
     padding-top: 120px;
     /* background-color: green; */
+  }
+  .conteiner-section-2 {
+    /* background-color: red; */
+    height: inherit;
+    min-height: 100vh;
+    margin-top: -100px;
   }
 }

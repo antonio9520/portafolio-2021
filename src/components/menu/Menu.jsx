@@ -34,7 +34,7 @@ const Menu = ({ visible }) => {
           to="conocimientos"
           spy={true}
           smooth={true}
-          offset={250}
+          offset={150}
           duration={500}
         >
           <h5>Conocimientos</h5>

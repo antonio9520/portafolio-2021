@@ -4,9 +4,9 @@ export const handleAnimation = (scrollTop, setState) => {
   const proyectos = document.getElementById("proyectos");
   const contacto = document.getElementById("contacto");
 
-  // console.log("sobre mi: " + sobreMi.offsetTop);
-  // console.log("conocimientos: " + conocimientos.offsetTop);
-  // console.log("scroll: " + scrollTop);
+  console.log("sobre mi: " + sobreMi.offsetTop);
+  console.log("conocimientos: " + conocimientos.offsetTop);
+  console.log("scroll: " + scrollTop);
 
   //INICIO
   if (scrollTop < sobreMi.offsetTop - 500) {
@@ -49,7 +49,10 @@ export const handleAnimation = (scrollTop, setState) => {
     });
   }
   //PROYECTOS
-  if (scrollTop > proyectos.offsetTop - 200 && scrollTop < contacto.offsetTop - 500) {
+  if (
+    scrollTop > proyectos.offsetTop - 200 &&
+    scrollTop < contacto.offsetTop - 500
+  ) {
     setState({
       section1: false,
       section2: false,
