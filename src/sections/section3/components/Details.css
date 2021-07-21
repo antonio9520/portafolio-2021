@@ -1,6 +1,7 @@
 .cont-detalles {
   background-color: white;
-  width: 400px;
+  width: 98%;
+  max-width: 400px;
   border-radius: 15px;
   position: relative;
   padding-top: 100px;
