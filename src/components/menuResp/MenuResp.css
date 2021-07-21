@@ -18,7 +18,7 @@
   background-color: #1e3266;
   top: 0;
   z-index: 99;
-  transform: translateX(500px);
+  transform: translateX(600px);
   transition: 0.5s all ease-in-out;
   box-shadow: 5px 10px 40px rgba(0, 0, 0, 0.3);
   display: none;

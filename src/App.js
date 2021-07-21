@@ -19,7 +19,7 @@ const App = () => {
   return (
     <div className="app">
       <Menu visible={state.section1} />
-      <MenuResp visible={state.section1} />
+      <MenuResp state={state} />
       <Section1 visible={state.section1} />
       <Section2 visible={state.section2} />
       <Section3 visible={state.section3} />

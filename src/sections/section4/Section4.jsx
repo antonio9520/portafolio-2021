@@ -30,21 +30,16 @@ const proyectos = [
     id: "01",
     imageURL: reactimage,
     nombre: "Portafolio",
-    lenguajes: ["react"],
-    descripcion: "Una descripcion",
+    lenguajes: ["react", "css", "html", "js"],
+    descripcion:
+      "Pagina web portafolio, desarrollada en React, con animaciones CSS.",
   },
   {
     id: "02",
     imageURL: reactimage,
-    nombre: "Portafolio",
-    lenguajes: ["react"],
-    descripcion: "Una descripcion",
-  },
-  {
-    id: "03",
-    imageURL: reactimage,
-    nombre: "Portafolio",
-    lenguajes: ["react"],
-    descripcion: "Una descripcion",
+    nombre: "ZapTalent",
+    lenguajes: ["react", "mongo", "node", "redux"],
+    descripcion:
+      "Proyecto realizado para agilizar las búsquedas de empleos para profesionales con certificación SAP. Desarrolado en MERN, con interfaz intuitiva pensada en el usuario, altos estándares de seguridad y escalable.",
   },
 ];

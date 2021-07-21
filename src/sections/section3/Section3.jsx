@@ -128,7 +128,7 @@ const data = [
   {
     titulo: "Javascript",
     icon: jsicon,
-    nivel: "Avanzado",
+    nivel: "Intermedio",
     detalles: "",
   },
   {

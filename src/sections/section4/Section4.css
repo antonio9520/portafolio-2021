@@ -53,7 +53,7 @@
     width: 100%;
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
+    justify-content: space-around;
     padding-left: 100px;
     padding-right: 100px;
     padding-top: 80px;
@@ -71,6 +71,9 @@
 /* Smartphones in landscape mode */
 
 @media only screen and (min-width: 600px) and (max-width: 959px) {
+  .container-proyectos {
+    justify-content: center;
+  }
 }
 
 /* Smartphones in portrait mode  */

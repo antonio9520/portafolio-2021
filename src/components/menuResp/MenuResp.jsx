@@ -1,24 +1,67 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import "./MenuResp.css";
 import { IconButton, makeStyles } from "@material-ui/core";
 import { Menu, Close } from "@material-ui/icons";
 import { Link } from "react-scroll";
 
-const MenuResp = ({ visible }) => {
+const MenuResp = ({ state }) => {
+  const { section1, section2, section3, section4, section5 } = state;
   const [open, setOpen] = useState(false);
+  const [bgColor, setBgColor] = useState("#1e3266");
+  const [color, setColor] = useState("#fff");
   const useStyles = makeStyles({
     root: {
       "&.MuiIconButton-root": {
-        backgroundColor: "#1e3266",
-        color: "white",
-        boxShadow: !visible && !open ? "1px 5px 40px rgba(0,0,0,0.3)" : null,
+        backgroundColor: bgColor,
+        color: color,
+        // boxShadow: !visible && !open ? "1px 5px 40px rgba(0,0,0,0.3)" : null,
         transition: "0.5s ease-in-out",
       },
     },
   });
   const classes = useStyles();
+  useEffect(() => {
+    if (section1) {
+      setColor("#fff");
+      setBgColor("#1e3266");
+    }
+    if (section2) {
+      setColor("#1e3266");
+      setBgColor("#fff");
+    }
+    if (section3) {
+      setColor("#fff");
+      setBgColor("#356CB1");
+    }
+    if (section4) {
+      setColor("#1e3266");
+      setBgColor("#fff");
+    }
+  }, [state]);
 
-
+  useEffect(() => {
+    if (open) {
+      setColor("#fff");
+      setBgColor("#1e3266");
+    } else {
+      if (section1) {
+        setColor("#fff");
+        setBgColor("#1e3266");
+      }
+      if (section2) {
+        setColor("#1e3266");
+        setBgColor("#fff");
+      }
+      if (section3) {
+        setColor("#fff");
+        setBgColor("#356CB1");
+      }
+      if (section4) {
+        setColor("#1e3266");
+        setBgColor("#fff");
+      }
+    }
+  }, [open]);
   return (
     <>
       <div className="container-btn-menu">

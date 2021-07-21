@@ -16,8 +16,7 @@ export default ({ visible }) => {
               Tengo solidos conocimientos en React y React-Native, de igual
               forma, domino a nivel Intermedio NodeJS, Express & MongoDB entre
               otros. Me apasiona programar y aprender de forma autodidacta, soy
-              proactivo, con capacidad de trabajar en equipo, responsable y
-              comprometido.
+              proactivo, analítico, con capacidad de resolver problemas y trabajar en equipo.
             </p>
           </div>
           <div className="rigth">

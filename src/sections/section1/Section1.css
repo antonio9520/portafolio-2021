@@ -1,6 +1,6 @@
 .conteiner-section-1 {
   /* background-color: #1e3266; */
-  height: 110vh;
+  height: 100vh;
   background-size: cover;
   position: relative;
   overflow: hidden;
@@ -110,10 +110,12 @@
 }
 
 .conteiner-section-1 .fondo-svg {
-  margin-top: -130px;
+  /* margin-top: -130px; */
   position: absolute;
+  bottom: 0;
   width: 100%;
   min-width: 1520px;
+  /* background-color: red; */
 }
 
 @keyframes fadeIn {
@@ -180,7 +182,7 @@
     margin-top: 100px;
     position: absolute;
     width: 150%;
-    height: 100%;
+    /* height: 100%; */
     min-width: inherit;
   }
 }
@@ -199,5 +201,30 @@
   }
   .conteiner-section-1 {
     margin-top: inherit;
+  }
+  .conteiner-section-1 {
+    /* background-color: #1e3266; */
+    height: 100vh;
+    background-size: cover;
+    position: relative;
+    overflow: hidden;
+  }
+
+  .conteiner-section-1 .fondo-color {
+    background-color: #1e3266;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    top: -10px;
+  }
+  .conteiner-section-1 .fondo-svg {
+    margin-top: inherit;
+    position: absolute;
+    bottom: -10px;
+    width: 100%;
+    min-width: 1000px;
+    
+ 
   }
 }
