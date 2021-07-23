@@ -1,0 +1,30 @@
+.cont-galeria {
+  background-color: white;
+  width: 95%;
+  height: 95%;
+  border-radius: 10px;
+  display: flex;
+  position: relative;
+  overflow: hidden;
+}
+.cont-galeria .bottom {
+  display: flex;
+  align-items: center;
+}
+.cont-SwipeableViews {
+  display: flex;
+  height: 100%;
+  align-items: center;
+  /* justify-content: space-between; */
+  padding: 0 5px;
+}
+.cont-galeria img {
+  width: 100%;
+  height: 100%;
+}
+
+.carousel-container {
+  /* background-color: red; */
+  width: 100%;
+  height: 100%;
+}

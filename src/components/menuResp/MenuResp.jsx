@@ -5,7 +5,7 @@ import { Menu, Close } from "@material-ui/icons";
 import { Link } from "react-scroll";
 
 const MenuResp = ({ state }) => {
-  const { section1, section2, section3, section4, section5 } = state;
+  const { section1, section2, section3, section4 } = state;
   const [open, setOpen] = useState(false);
   const [bgColor, setBgColor] = useState("#1e3266");
   const [color, setColor] = useState("#fff");

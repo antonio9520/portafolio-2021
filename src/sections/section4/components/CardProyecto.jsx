@@ -25,9 +25,10 @@ const useStyles = makeStyles((theme) => ({
   },
 }));
 
-const CardProyect = ({ proyecto, delay }) => {
+const CardProyect = ({ proyecto, delay, setOpenModal, setGaleria }) => {
   console.log(delay);
-  const { imageURL, nombre, lenguajes, descripcion } = proyecto;
+  const { imageURL, nombre, lenguajes, descripcion, galeria, github, appURL } =
+    proyecto;
 
   const classes = useStyles();
   const [expanded, setExpanded] = React.useState(false);
@@ -42,8 +43,22 @@ const CardProyect = ({ proyecto, delay }) => {
       style={{ animationDelay: `${delay}s` }}
     >
       <div className="cont-contenido">
-        <div className="cont-img-card">
-          <img className="img-targetProyect" src={imageURL} alt="imagen"></img>
+        <div
+          title={galeria[0] ? "Abrir Galeria" : null}
+          className="cont-img-card"
+          onClick={() => {
+            if (galeria[0]) {
+              setGaleria(galeria);
+              setOpenModal(true);
+            }
+          }}
+          style={{ cursor: galeria[0] ? "pointer" : null }}
+        >
+          <img
+            className={`img-targetProyect ${galeria[0] && "open-galeria"}`}
+            src={imageURL}
+            alt="imagen"
+          ></img>
         </div>
         <div className="cont-typo">
           <Typography className="name-proyect" variant="h5">
@@ -70,12 +85,16 @@ const CardProyect = ({ proyecto, delay }) => {
             <Collapse in={expanded} timeout="auto" unmountOnExit>
               <Typography variant="body2">{descripcion}</Typography>
               <div>
-                <IconButton>
-                  <GitHub titleAccess="Ver en GitHub" />
-                </IconButton>
-                <IconButton>
-                  <QueuePlayNext titleAccess="Abrir Aplicación" />
-                </IconButton>
+                {github && (
+                  <IconButton onClick={() => window.open(github)}>
+                    <GitHub titleAccess="Ver en GitHub" />
+                  </IconButton>
+                )}
+                {appURL && (
+                  <IconButton onClick={() => window.open(appURL)}>
+                    <QueuePlayNext titleAccess="Abrir Aplicación" />
+                  </IconButton>
+                )}
               </div>
             </Collapse>
           </div>
